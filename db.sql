@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `api_app` (
   `id` int(12) NOT NULL,
-  `appid` int(12) NOT NULL,
   `appname` varchar(120) NOT NULL,
   `apptype` varchar(120) NOT NULL,
   `appkey` varchar(120) NOT NULL,
