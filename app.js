@@ -11,8 +11,10 @@ let fpm = new Fpm()
 
 fpm.use(configuration)
 
-fpm.addBizModules(biz)
+fpm.addBizModules(biz(fpm))
 
 const httpPort = 9991
 
 fpm.run(httpPort)
+
+export default fpm
