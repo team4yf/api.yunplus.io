@@ -12,7 +12,7 @@ export default (fpm) =>{
 		functions[key] = async (args) => {
 			var data;
 			try{
-				data = await M[key + 'Async'](args)
+				data = await fpm.M[key + 'Async'](args)
 				return new Promise( (resolve, reject) => {
 					resolve ( {data: data } )
 				})
