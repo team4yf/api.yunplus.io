@@ -24,7 +24,18 @@ import fetchData from './fetch'
 //     console.log(error)
 //   })
 
-fetchData('common.get', { table: 'api_app' , id: 1})
+// fetchData('common.get', { table: 'api_app' , id: 1})
+//   .then((json) => {
+//     console.log(json)
+//   })
+//   .catch((error) => {
+//     console.log(error)
+//   })
+
+
+fetchData('system.sendMail', { templateId: 3 , to: '1794947912@qq.com', subject: 'test', data: {
+  foo: 'test that'
+}})
   .then((json) => {
     console.log(json)
   })
