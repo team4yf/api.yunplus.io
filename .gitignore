@@ -23,3 +23,4 @@ uploads/*.json
 .DS_Store
 
 key.js
+config.json

@@ -2,13 +2,13 @@
   "mysql": {
     "host":"localhost",
     "database":"fpm",
-    "username":"dbadmin",
-    "password":"741235896",
+    "username":"root",
+    "password":"root",
     "showSql": true
   },
   "email": {
     "service": "qq",
-    "user": "2917071792@qq.com",
-    "pass": "apzndkhyethwdefa"
+    "user": "88888888@qq.com",
+    "pass": "88888888"
   }
 }
