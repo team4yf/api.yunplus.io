@@ -3,7 +3,6 @@ import _ from 'lodash'
 export default function(fpm){
 	return {
 		checkVersion: async function(args){
-			console.log(fpm)
 	    let arg = {
 	     table: "cm_version",
 	     condition: "delflag = 0 and app = '" + args.app + "'",
