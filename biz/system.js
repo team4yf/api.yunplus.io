@@ -45,7 +45,7 @@ const mailSend = bluebird.promisify(fpm.emailer.send)
 					totalmem: Math.ceil(os.totalmem() / 1024 / 1024),
 					uptime: os.uptime(),
 					server: info,
-					startTime: global.__startTime,
+					startTime: fpm._start_time,
 				}
 			}catch(e){
 			}
