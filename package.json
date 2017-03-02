@@ -18,7 +18,7 @@
     "fpm-plugin-schedule": "^1.0.0",
     "lodash": "^4.16.1",
     "node-fetch": "^1.6.3",
-    "yf-fpm-server": "^2.1.15",
+    "yf-fpm-server": "^2.2.0",
     "yf-website-tool": "^1.0.9"
   },
   "devDependencies": {
