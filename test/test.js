@@ -33,15 +33,15 @@ import fetchData from './fetch'
 //   })
 
 
-fetchData('system.sendMail', { templateId: 3 , to: '1794947912@qq.com', subject: 'test', data: {
-  foo: 'test that'
-}})
-  .then((json) => {
-    console.log(json)
-  })
-  .catch((error) => {
-    console.log(error)
-  })
+// fetchData('system.sendMail', { templateId: 3 , to: '1794947912@qq.com', subject: 'test', data: {
+//   foo: 'test that'
+// }})
+//   .then((json) => {
+//     console.log(json)
+//   })
+//   .catch((error) => {
+//     console.log(error)
+//   })
 
 
 // fetchData('schedule.start', {method: 'system.show', v: '0.0.1', cron: '* * * * *'})
@@ -60,10 +60,18 @@ fetchData('system.sendMail', { templateId: 3 , to: '1794947912@qq.com', subject:
 //     console.log(error)
 //   })
 
-// fetchData('baidu.check', {})
+// fetchData('baidu.push', {})
 //   .then((json) => {
 //     console.log(json)
 //   })
 //   .catch((error) => {
 //     console.log(error)
 //   })
+
+fetchData('baidu.check', {})
+  .then((json) => {
+    console.log(json)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
