@@ -25,11 +25,43 @@ export default function(fpm){
 			 row:{ status: 1, bind_id: args.bind_id}
 	    }
 			let count = await fpm.M.countAsync(arg)
-			if (count === 1) {
+			return new Promise( (resolve, reject) => {
+				if (count !== 1) {
+					reject({errno: -9997, message: 'No Reg Code'})
+					return
+				}
 				// 绑定数据
-				await fpm.M.updateAsync(arg)
-				// fpm.M
-			}
+				fpm.M.transation(function(err, atom){
+					let _now = _.now()
+					atom.update({
+						table: "fpm_reg_code",
+						condition: "delflag = 0 and status = 0 and code = '" + args.code + "'",
+						row: { status: 1, bind_id: args.bind_id, updateAt: _now}
+						}, function(err, result1){
+						if(err){
+							atom.rollback();
+							return 
+						}
+						obj = {
+						　table: "fpm_device",
+							row:{ bin: args.bind_id, createAt: _now, updateAt: _now, domain: 'game-plugin', activeAt: _now, activeflag: 1}
+						}
+						atom.create(obj, function(err, result2){
+							if(err){
+								atom.rollback(function(){
+									reject(err)
+								});
+							}else{
+								atom.commit(function(err){
+									resolve({errno: 0})
+								});
+							}
+						});
+					});
+				});
+			
+			})
+			
 
 		}
 	}
