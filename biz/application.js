@@ -16,6 +16,21 @@ export default function(fpm){
 					resolve({data: data})
 				}
 			});
+		},
+		// 注册设备
+		register: async (args) => {
+			let arg = {
+	     table: "fpm_reg_code",
+	     condition: "delflag = 0 and status = 0 and code = '" + args.code + "'",
+			 row:{ status: 1, bind_id: args.bind_id}
+	    }
+			let count = await fpm.M.countAsync(arg)
+			if (count === 1) {
+				// 绑定数据
+				await fpm.M.updateAsync(arg)
+				// fpm.M
+			}
+
 		}
 	}
 }
