@@ -45,7 +45,7 @@ export default function(fpm){
 							reject(err)
 							return 
 						}
-						obj = {
+						let obj = {
 						　table: "fpm_device",
 							row:{ bin: args.bind_id, createAt: _now, updateAt: _now, domain: 'game-plugin', activeAt: _now, activeflag: 1}
 						}
