@@ -34,12 +34,13 @@ export default function(fpm){
 				fpm.M.transation(function(err, atom){
 					let _now = _.now()
 					atom.update({
-						table: "fpm_reg_code",
-						condition: "delflag = 0 and status = 0 and code = '" + args.code + "'",
-						row: { status: 1, bind_id: args.bind_id, updateAt: _now}
+							table: "fpm_reg_code",
+							condition: "delflag = 0 and status = 0 and code = '" + args.code + "'",
+							row: { status: 1, bind_id: args.bind_id, updateAt: _now}
 						}, function(err, result1){
 						if(err){
 							atom.rollback();
+							reject(err)
 							return 
 						}
 						obj = {
