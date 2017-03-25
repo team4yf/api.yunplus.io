@@ -26,7 +26,9 @@ export default function(fpm){
 	    }
 			let count = await fpm.M.countAsync(arg)
 			return new Promise( (resolve, reject) => {
+				console.log(count)
 				if (count !== 1) {
+					console.log('errno')
 					reject({errno: -9997, message: 'No Reg Code'})
 					return
 				}
