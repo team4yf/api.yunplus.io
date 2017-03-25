@@ -17,6 +17,21 @@ export default function(fpm){
 				}
 			});
 		},
+		// 验证设备
+		validate: async (args) => {
+			let arg = {
+	     table: "fpm_device",
+			 condition: "domain = 'game-plugin' and activeflag = 1 and bin = '" + args.bin + "'"
+			}
+			let count = await fpm.M.countAsync(arg)
+			return new Promise( (resolve, reject) => {
+				if (count !== 1) {
+					reject({errno: -9998, message: 'Not Granted'})
+					return
+				}
+				resolve({errno: 0, data: {}})
+			})
+		},
 		// 注册设备
 		register: async (args) => {
 			let arg = {
@@ -26,9 +41,7 @@ export default function(fpm){
 	    }
 			let count = await fpm.M.countAsync(arg)
 			return new Promise( (resolve, reject) => {
-				console.log(count)
 				if (count !== 1) {
-					console.log('errno')
 					reject({errno: -9997, message: 'No Reg Code'})
 					return
 				}
@@ -56,7 +69,7 @@ export default function(fpm){
 								});
 							}else{
 								atom.commit(function(err){
-									resolve({errno: 0})
+									resolve({errno: 0, data: result2})
 								});
 							}
 						});
