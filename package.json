@@ -16,6 +16,7 @@
     "fpm-plugin-baidu": "^0.0.1",
     "fpm-plugin-emailer": "^1.0.3",
     "fpm-plugin-mysql": "^1.0.1",
+    "fpm-plugin-qiniu-upload": "^1.0.0",
     "fpm-plugin-schedule": "^1.0.0",
     "lodash": "^4.16.1",
     "node-fetch": "^1.6.3",
