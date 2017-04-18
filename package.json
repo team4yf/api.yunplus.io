@@ -18,6 +18,7 @@
     "fpm-plugin-mysql": "^1.0.1",
     "fpm-plugin-qiniu-upload": "^1.0.0",
     "fpm-plugin-schedule": "^1.0.0",
+    "fpm-plugin-socketio": "^0.0.1",
     "lodash": "^4.16.1",
     "node-fetch": "^1.6.3",
     "yf-fpm-server": "^2.2.0",
