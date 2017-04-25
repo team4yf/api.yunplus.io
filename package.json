@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.babel.js",
+    "test": "node test/*.test.js",
     "server": "node app.babel.js"
   },
   "author": "",
@@ -29,5 +29,9 @@
     "node-fetch": "^1.6.3",
     "yf-fpm-server": "^2.2.0",
     "yf-website-tool": "^1.0.9"
+  },
+  "devDependencies": {
+    "should": "^11.2.1",
+    "yf-fpm-client-nodejs": "^1.0.11"
   }
 }
