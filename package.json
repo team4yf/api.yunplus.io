@@ -22,6 +22,7 @@
     "fpm-plugin-emailer": "^1.0.3",
     "fpm-plugin-gallery": "^1.0.0",
     "fpm-plugin-mysql": "^1.0.1",
+    "fpm-plugin-proxy": "^0.0.1",
     "fpm-plugin-qiniu-upload": "^1.0.0",
     "fpm-plugin-schedule": "^1.0.0",
     "fpm-plugin-socketio": "^0.0.3",
