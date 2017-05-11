@@ -20,7 +20,7 @@
     "bluebird": "^3.4.6",
     "fpm-plugin-baidu": "^0.0.1",
     "fpm-plugin-emailer": "^1.0.3",
-    "fpm-plugin-gallery": "^1.0.0",
+    "fpm-plugin-gallery": "^1.0.1",
     "fpm-plugin-mysql": "^1.0.1",
     "fpm-plugin-proxy": "^0.0.1",
     "fpm-plugin-qiniu-upload": "^1.0.0",
