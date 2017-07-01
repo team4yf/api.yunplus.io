@@ -980,7 +980,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@*, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.3:
+debug@*, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.0:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.6.tgz#a9fa6fbe9ca43cf1e79f73b75c0189cbb7d6db5a"
   dependencies:
@@ -1240,12 +1240,12 @@ fpm-plugin-mysql@^1.0.1:
     lodash "^4.17.4"
     yf-fpm-dbm "^2.0.3"
 
-fpm-plugin-page@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-page/-/fpm-plugin-page-0.0.2.tgz#99133d31658403503b0d2220c4c78c2109cd2d8a"
+fpm-plugin-page@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-page/-/fpm-plugin-page-0.0.3.tgz#9623bc66e4f646d5cabb908822f26e2be338ebf9"
   dependencies:
     koa-session2 "^2.2.4"
-    koa-views "^6.0.2"
+    koa-views "^5.2.1"
     lodash "^4.17.4"
     nunjucks "^3.0.1"
 
@@ -1440,7 +1440,7 @@ http-basic@^2.5.1:
     concat-stream "^1.4.6"
     http-response-object "^1.0.0"
 
-http-errors@^1.2.8, http-errors@^1.3.1, http-errors@^1.6.1, http-errors@~1.6.1:
+http-errors@^1.2.8, http-errors@^1.3.1, http-errors@~1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.1.tgz#5f8b8ed98aca545656bf572997387f904a722257"
   dependencies:
@@ -1748,14 +1748,14 @@ koa-router@^7.1.0, koa-router@^7.1.1:
     methods "^1.0.1"
     path-to-regexp "^1.1.1"
 
-koa-send@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/koa-send/-/koa-send-4.1.0.tgz#07d5a4eaab212679fe99916aae6b1109c08c2361"
+koa-send@^3.1.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/koa-send/-/koa-send-3.3.0.tgz#5a4ae245564680c6ecf6079e9275fa5173a861dc"
   dependencies:
-    debug "^2.6.3"
-    http-errors "^1.6.1"
-    mz "^2.6.0"
-    resolve-path "^1.3.3"
+    co "^4.6.0"
+    debug "^2.6.0"
+    mz "^2.3.1"
+    resolve-path "^1.3.1"
 
 koa-session2@^2.2.4:
   version "2.2.4"
@@ -1768,13 +1768,13 @@ koa-socket@^4.4.0:
     koa-compose "3.1.0"
     socket.io "1.4.5"
 
-koa-views@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/koa-views/-/koa-views-6.0.2.tgz#0c8252589dbbdd63e30896080942b4bf4b0e5214"
+koa-views@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/koa-views/-/koa-views-5.2.1.tgz#fdd89dbbca7d9f47daf1f24ad6eb4cb9268f5f01"
   dependencies:
     consolidate "^0.14.1"
     debug "^2.1.3"
-    koa-send "^4.0.0"
+    koa-send "^3.1.0"
     mz "^2.4.0"
 
 koa2-cors@^2.0.3:
@@ -1950,7 +1950,7 @@ mysql@^2.13.0:
     readable-stream "1.1.14"
     sqlstring "2.2.0"
 
-mz@^2.4.0, mz@^2.6.0:
+mz@^2.3.1, mz@^2.4.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/mz/-/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
   dependencies:
@@ -2371,7 +2371,7 @@ request@^2.79.0, request@^2.81.0:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
-resolve-path@^1.3.3:
+resolve-path@^1.3.1:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/resolve-path/-/resolve-path-1.3.3.tgz#4d83aba6468c2b8e632a575e3f52b0fa0dbe1a5c"
   dependencies:
