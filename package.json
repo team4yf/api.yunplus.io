@@ -29,7 +29,7 @@
     "fpm-plugin-socketio": "^0.0.3",
     "lodash": "^4.16.1",
     "node-fetch": "^1.6.3",
-    "yf-fpm-server": "^2.2.0",
+    "yf-fpm-server": "^2.2.5",
     "yf-website-tool": "^1.0.9"
   },
   "devDependencies": {
