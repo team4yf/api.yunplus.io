@@ -1240,9 +1240,9 @@ fpm-plugin-mysql@^1.0.1:
     lodash "^4.17.4"
     yf-fpm-dbm "^2.0.3"
 
-fpm-plugin-page@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-page/-/fpm-plugin-page-0.0.1.tgz#50e1e5a6fb9ef82a60fde57accdc3b19d5818ccc"
+fpm-plugin-page@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-page/-/fpm-plugin-page-0.0.2.tgz#99133d31658403503b0d2220c4c78c2109cd2d8a"
   dependencies:
     koa-session2 "^2.2.4"
     koa-views "^6.0.2"
