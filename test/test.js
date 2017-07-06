@@ -68,7 +68,14 @@ import fetchData from './fetch'
 //     console.log(error)
 //   })
 
-fetchData('baidu.check', {})
+// fetchData('baidu.check', {})
+//   .then((json) => {
+//     console.log(json)
+//   })
+//   .catch((error) => {
+//     console.log(error)
+//   })
+fetchData('system.sms', {tpl_id: 39012, mobiles: '13770683580', tpl_value: {number: 20}})
   .then((json) => {
     console.log(json)
   })
