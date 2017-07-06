@@ -6,6 +6,12 @@ import path from 'path'
 import fetch from 'node-fetch'
 const readFileAsync = bluebird.promisify(fs.readFile)
 
+/**
+ * StiStrap module
+ * @module StiStrap
+ * @namespace StiStrap
+ * @desc 提供Bootstrap的Vue实现
+ */
 export default (fpm) => {
 const mailSend = bluebird.promisify(fpm.emailer.send)
 	return {
@@ -31,6 +37,11 @@ const mailSend = bluebird.promisify(fpm.emailer.send)
 				}
 			})
 		},
+		/**
+		 * Represents a book.
+		 * @param {tpl_id} tpl_id - The title of the book.
+		 * @param {tpl_value} tpl_value - The author of the book.
+		 */
 		sms: async (args) => {
 			const APPKEY = '1a6c0e78e6ce02680e1d92b40181d3dc'
 			let tpl_id = args.tpl_id || false
