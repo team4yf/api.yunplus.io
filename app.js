@@ -1,10 +1,9 @@
-import { Fpm }  from 'yf-fpm-server'
-import biz from './biz'
+const Fpm = require('yf-fpm-server').Fpm;
+const biz = require('./lib').default;
 
-let fpm = new Fpm()
+const fpm = new Fpm()
 
 fpm.addBizModules(biz(fpm))
 
 fpm.run()
 
-export default fpm

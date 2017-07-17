@@ -4,12 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "babel -d lib/ biz/",
     "test": "node test/*.test.js",
-    "server": "node app.babel.js"
+    "start": "node app.js",
+    "prestart": "npm run compile"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.4.6",
+    "fpm-plugin-baidu": "^0.0.1",
+    "fpm-plugin-emailer": "^1.0.3",
+    "fpm-plugin-gallery": "^1.0.1",
+    "fpm-plugin-mysql": "^1.0.1",
+    "fpm-plugin-page": "^0.0.22",
+    "fpm-plugin-proxy": "^0.0.1",
+    "fpm-plugin-qiniu-upload": "^1.0.0",
+    "fpm-plugin-schedule": "^1.0.0",
+    "fpm-plugin-socketio": "^0.0.4",
+    "lodash": "^4.16.1",
+    "node-fetch": "^1.7.1",
+    "yf-fpm-server": "^2.2.9",
+    "yf-website-tool": "^1.0.9"
+  },
+  "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-plugin-transform-runtime": "^6.0.0",
     "babel-polyfill": "^6.13.0",
@@ -17,22 +35,6 @@
     "babel-preset-stage-2": "^6.13.0",
     "babel-register": "^6.14.0",
     "babel-runtime": "^6.0.0",
-    "bluebird": "^3.4.6",
-    "fpm-plugin-baidu": "^0.0.1",
-    "fpm-plugin-emailer": "^1.0.3",
-    "fpm-plugin-gallery": "^1.0.1",
-    "fpm-plugin-mysql": "^1.0.1",
-    "fpm-plugin-page": "^0.0.3",
-    "fpm-plugin-proxy": "^0.0.1",
-    "fpm-plugin-qiniu-upload": "^1.0.0",
-    "fpm-plugin-schedule": "^1.0.0",
-    "fpm-plugin-socketio": "^0.0.4",
-    "lodash": "^4.16.1",
-    "node-fetch": "^1.7.1",
-    "yf-fpm-server": "^2.2.5",
-    "yf-website-tool": "^1.0.9"
-  },
-  "devDependencies": {
     "should": "^11.2.1",
     "yf-fpm-client-nodejs": "^1.0.11"
   }
