@@ -19,13 +19,14 @@
     "fpm-plugin-emailer": "^1.0.3",
     "fpm-plugin-gallery": "^1.0.1",
     "fpm-plugin-mysql": "^1.0.1",
+    "fpm-plugin-page": "^0.0.22",
     "fpm-plugin-proxy": "^0.0.1",
     "fpm-plugin-qiniu-upload": "^1.0.0",
     "fpm-plugin-schedule": "^1.0.0",
     "fpm-plugin-socketio": "^0.0.4",
     "lodash": "^4.16.1",
     "node-fetch": "^1.7.1",
-    "yf-fpm-server": "^2.2.12",
+    "yf-fpm-server": "^2.2.17",
     "yf-website-tool": "^1.0.9"
   },
   "devDependencies": {

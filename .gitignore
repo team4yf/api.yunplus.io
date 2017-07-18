@@ -22,3 +22,5 @@ uploads/
 
 key.js
 config.json
+pages/*
+views/*
