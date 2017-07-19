@@ -68,10 +68,13 @@ const mailSend = bluebird.promisify(fpm.emailer.send)
 				
 			})
 		},
+		doCommand: async(args) => {
+			return fpm.doCommand(args.command)
+		},
 		show: async (args) => {
 			let data = {};
 			try{
-				let info = JSON.parse(await readFileAsync(path.join(__dirname, '../package.json'), 'utf-8'))
+				let info = require(path.join(__dirname, '../package.json'))
 				data = {
 					arch: os.arch(),
 					cpus: os.cpus(),
