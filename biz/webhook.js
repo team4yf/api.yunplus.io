@@ -5,6 +5,7 @@ const generate = (upstream, type) => {
   return async (message, data) => {
     let project = data.url_data
     try {
+      let result = 'undefined'
       switch(upstream){
         case 'github':
           result = await _fpm.doCommand('yfcode pull -' + type + ' ' + project)
