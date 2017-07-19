@@ -6,7 +6,7 @@ export default function(fpm){
 	    let arg = {
 	     table: "cm_version",
 	     condition: "delflag = 0 and app = '" + args.app + "'",
-	     fields: "id,version,download"
+	     fields: "id,version,download,app,autorun"
 	    }
 			let data = await fpm.M.firstAsync(arg);
 			return new Promise( (resolve, reject) => {
