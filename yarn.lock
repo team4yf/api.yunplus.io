@@ -1290,6 +1290,12 @@ fpm-plugin-gallery@^1.0.1:
     lodash "^4.17.4"
     qiniu "^6.1.13"
 
+fpm-plugin-jackpot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-jackpot/-/fpm-plugin-jackpot-1.0.0.tgz#cad4c64c06339ac44a2735f339e6593c47d033f2"
+  dependencies:
+    lodash "^4.17.4"
+
 fpm-plugin-mysql@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/fpm-plugin-mysql/-/fpm-plugin-mysql-1.0.3.tgz#379c93ab67f4b886bbd6a687085b1b663b7244b2"
@@ -1297,12 +1303,6 @@ fpm-plugin-mysql@^1.0.1:
     bluebird "^3.4.7"
     lodash "^4.17.4"
     yf-fpm-dbm "^2.0.3"
-
-fpm-plugin-page@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-page/-/fpm-plugin-page-1.0.0.tgz#3eb9c9ab816c1e52f168b1d59f12ff1177448ced"
-  dependencies:
-    lodash "^4.17.4"
 
 fpm-plugin-proxy@^0.0.1:
   version "0.0.1"
@@ -1811,9 +1811,15 @@ koa-bodyparser@^3.2.0:
   dependencies:
     co-body "^4.2.0"
 
-koa-compose@3.1.0, koa-compose@^3.0.0:
+koa-compose@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-3.1.0.tgz#f6e32f1b8953f7c87b97fc10c208fed334da76f4"
+  dependencies:
+    any-promise "^1.1.0"
+
+koa-compose@^3.0.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/koa-compose/-/koa-compose-3.2.1.tgz#a85ccb40b7d986d8e5a345b3a1ace8eabcf54de7"
   dependencies:
     any-promise "^1.1.0"
 
@@ -3208,8 +3214,8 @@ yf-fpm-dbm@^2.0.3:
     mysql "^2.13.0"
 
 yf-fpm-server@^2.2.19:
-  version "2.2.19"
-  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.2.19.tgz#95c44e55e61844bd2dba656fb267f82576d38411"
+  version "2.2.20"
+  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.2.20.tgz#76e72cde5da892d27473d545193e9bdc4dcee1ef"
   dependencies:
     koa "^2.0.0"
     koa-bodyparser "^3.2.0"
