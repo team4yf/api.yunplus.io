@@ -1,6 +1,6 @@
 var should = require("chai").should;
 var fpmc = require("yf-fpm-client-js").default;
-fpmc.init({ mode: 'DEV', appkey:'123123', masterKey:'123123', domain: 'http://localhost:9999' });
+fpmc.init({ mode: 'DEV', appkey:'123123', masterKey:'123123', domain: 'http://api.yunplus.io' });
 
 describe('Function', function(){
   it('test', function(done){
