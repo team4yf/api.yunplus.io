@@ -9,6 +9,7 @@ const generate = (upstream, type, _fpm) => {
       let result = 'undefined'
       switch(upstream){
         case 'github':
+          console.info(shellFilePath, ['pull', '-' + type, project])
           result = await _fpm.execShell(shellFilePath, ['pull', '-' + type, project])
           break;
         case 'coding':
