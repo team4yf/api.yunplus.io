@@ -1476,9 +1476,9 @@ form-data@~2.3.0, form-data@~2.3.1:
     combined-stream "1.0.6"
     mime-types "^2.1.12"
 
-fpm-plugin-admin@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-admin/-/fpm-plugin-admin-1.0.5.tgz#d9b1e74456f58d22ac3d50da736cc0d9fd246040"
+fpm-plugin-admin@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-admin/-/fpm-plugin-admin-1.0.6.tgz#473cefc15b70bf5c1d788df345172c847c9ff4b4"
   dependencies:
     axios "^0.18.0"
     dayjs "^1.6.2"
@@ -1487,7 +1487,7 @@ fpm-plugin-admin@^1.0.5:
     koa-views "^6.1.4"
     lodash "^4.17.4"
     nunjucks "^3.1.2"
-    yf-fpm-client-js "^1.0.1"
+    yf-fpm-client-js "^1.0.2"
 
 fpm-plugin-logger@^1.0.0:
   version "1.0.0"
@@ -4039,13 +4039,6 @@ yargs@^3.32.0:
     string-width "^1.0.1"
     window-size "^0.1.4"
     y18n "^3.2.0"
-
-yf-fpm-client-js@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/yf-fpm-client-js/-/yf-fpm-client-js-1.0.1.tgz#4dd53064d24d3dd89db17abb6da9e0a20b1ebe7f"
-  dependencies:
-    axios "^0.18.0"
-    lodash "^4.17.4"
 
 yf-fpm-client-js@^1.0.2:
   version "1.0.2"
