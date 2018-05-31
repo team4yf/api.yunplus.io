@@ -1,24 +1,20 @@
 {
-  "server":{
-    "port": 9991
+  "server":
+  {
+      "hostname": "0.0.0.0",
+      "domain": "api.yunplus.io",
+      "port": 9991
   },
   "defaultVersion":"0.0.1",
   "dev": "DEV",
-  "log4js": {
-    "appenders": [
-      { "type": "console" },{
-        "type": "file",
-        "filename": "logs/access.log",
-        "maxLogSize": 104857600, //100Mb一个文件 1024*1024*100 = 104857600
-        "backups": 10,
-        "category": "normal"
+  "log4js":
+  {
+      "appenders": {
+        "app": { "type": "dateFile", "filename": "logs/app.log", "pattern": ".yyyy-MM-dd-hh", "compress": true }
+      },
+      "categories": {
+        "default": { "appenders": [ "app" ], "level": "debug"}
       }
-    ],
-    "replaceConsole": true,
-    "levels":{
-      "dateFileLog": "debug",
-      "console": "errno"
-    }
   },
   "apps": {
     "123123": {
@@ -38,5 +34,9 @@
     "service": "qq",
     "user": "88888888@qq.com",
     "pass": "88888888"
+  },
+  "jpush": {
+    "appkey": "eb1b4ead0ba8b161cbfaa7ec",
+    "secretkey": "64031a878a3389eeb3dc80a8"
   }
 }

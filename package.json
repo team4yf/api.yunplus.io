@@ -8,15 +8,17 @@
     "test": "node test/*.test.js",
     "start": "node app.js",
     "prestart": "npm run compile",
-    "predev": "npm run compile",
-    "dev": "./node_modules/.bin/nodemon app.js"
+    "dev": "./node_modules/.bin/nodemon dev/dev.babel.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "bluebird": "^3.4.6",
+    "fpm-plugin-admin": "^1.0.2",
+    "fpm-plugin-logger": "^1.0.0",
+    "fpm-plugin-mysql": "^1.0.8",
     "lodash": "^4.16.1",
-    "axios": "^1.7.1",
     "yf-fpm-server": "^2.4.6"
   },
   "devDependencies": {
