@@ -4047,6 +4047,13 @@ yf-fpm-client-js@^1.0.1:
     axios "^0.18.0"
     lodash "^4.17.4"
 
+yf-fpm-client-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/yf-fpm-client-js/-/yf-fpm-client-js-1.0.2.tgz#199866c134ad5251c1cd571a1c9a9c8acb1c7476"
+  dependencies:
+    axios "^0.18.0"
+    lodash "^4.17.4"
+
 yf-fpm-dbm@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/yf-fpm-dbm/-/yf-fpm-dbm-2.0.7.tgz#16f8eb466e363e82dc500374cf23713b6195621a"
@@ -4055,9 +4062,9 @@ yf-fpm-dbm@^2.0.7:
     lodash "^4.15.0"
     mysql "^2.13.0"
 
-yf-fpm-server@^2.4.8:
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.8.tgz#30562f2ca993cf02564f117ec5a76f62fab3b011"
+yf-fpm-server@^2.4.9:
+  version "2.4.9"
+  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.9.tgz#a5f9e289251babed4147a9d542d99a0f2f148810"
   dependencies:
     koa "^2.5.1"
     koa-bodyparser "^4.2.1"
