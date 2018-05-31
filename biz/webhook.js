@@ -9,7 +9,6 @@ const generate = (upstream, type, _fpm) => {
       let result = 'undefined'
       switch(upstream){
         case 'github':
-          console.info(shellFilePath, ['pull', '-' + type, project])
           result = await _fpm.execShell(shellFilePath, ['pull', '-' + type, project])
           break;
         case 'coding':
@@ -18,9 +17,9 @@ const generate = (upstream, type, _fpm) => {
         default:
           result = 'unknow upstream'
       }
-      console.log(result)
+      _fpm.logger.info(result)
     } catch (error) {
-      console.log(error)
+      _fpm.logger.error(error)
     }
   }
 }
