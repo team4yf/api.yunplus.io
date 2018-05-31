@@ -4098,9 +4098,9 @@ yf-fpm-dbm@^2.0.7:
     lodash "^4.15.0"
     mysql "^2.13.0"
 
-yf-fpm-server@^2.4.6:
-  version "2.4.6"
-  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.6.tgz#c7c9b839ab746e4583762ba0a6276df18d55fd1e"
+yf-fpm-server@^2.4.7:
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.7.tgz#661c584289fdae189f5d68f9c6bb37cefac5da62"
   dependencies:
     koa "^2.5.1"
     koa-bodyparser "^4.2.1"

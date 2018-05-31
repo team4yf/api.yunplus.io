@@ -1,17 +1,18 @@
 import _ from 'lodash'
+import path from 'path'
 
-let _fpm = undefined
-const generate = (upstream, type) => {
+let shellFilePath
+const generate = (upstream, type, _fpm) => {
   return async (message, data) => {
     let project = data.url_data
     try {
       let result = 'undefined'
       switch(upstream){
         case 'github':
-          result = await _fpm.doCommand('yfcode pull -' + type + ' ' + project)
+          result = await _fpm.execShell(shellFilePath, ['pull', '-' + type, project])
           break;
         case 'coding':
-          result = await _fpm.doCommand('yfcode pull -' + type + ' ' + project)
+          result = await _fpm.execShell(shellFilePath, ['pull', '-' + type, project])
           break;
         default:
           result = 'unknow upstream'
@@ -23,9 +24,9 @@ const generate = (upstream, type) => {
   }
 }
 export default (fpm) => {
-  _fpm = fpm
-  fpm.subscribe('github/p', generate('github', 'p'))
-  fpm.subscribe('github/w', generate('github', 'w'))
-  fpm.subscribe('coding/p', generate('coding', 'p'))
-  fpm.subscribe('coding/w', generate('coding', 'w'))
+  shellFilePath = path.join(fpm.get('CWD'), 'shell', 'codepull.sh')
+  fpm.subscribe('github/p', generate('github', 'p', fpm))
+  fpm.subscribe('github/w', generate('github', 'w', fpm))
+  fpm.subscribe('coding/p', generate('coding', 'p', fpm))
+  fpm.subscribe('coding/w', generate('coding', 'w', fpm))
 }

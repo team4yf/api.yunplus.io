@@ -17,7 +17,7 @@ node_modules
 cache/*.json
 public/dist/*
 uploads/
-
+logs/
 .DS_Store
 
 key.js
