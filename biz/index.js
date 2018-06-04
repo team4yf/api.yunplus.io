@@ -4,6 +4,7 @@ import common from './common'
 import application from './application'
 import user from './user'
 import system from './system'
+import faker from './faker'
 import webhook from './webhook'
 
 export default (fpm) =>{
@@ -12,6 +13,7 @@ export default (fpm) =>{
   biz.addSubModules('user', user)
   biz.addSubModules('application', application)
   biz.addSubModules('system', system)
+  biz.addSubModules('faker', faker)
   webhook(fpm)
   return biz
 }
