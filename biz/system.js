@@ -25,6 +25,7 @@ export default (fpm) => {
 					startTime: fpm._start_time,
 				}
 			}catch(e){
+				fpm.logger.error(e)
 			}
 			return new Promise( (resolve, reject) => {
 				if(_.isEmpty(data)){

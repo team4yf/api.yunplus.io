@@ -7,10 +7,10 @@ import webhook from './webhook'
 
 export default (fpm) =>{
   let biz = new fpm.createBiz('0.0.1')
-  biz.addSubModules('user', user)
-  biz.addSubModules('application', application)
-  biz.addSubModules('system', system)
-  biz.addSubModules('faker', faker)
+  biz.addSubModules('user', user(fpm))
+  biz.addSubModules('application', application(fpm))
+  biz.addSubModules('system', system(fpm))
+  biz.addSubModules('faker', faker(fpm))
   webhook(fpm)
   return biz
 }
