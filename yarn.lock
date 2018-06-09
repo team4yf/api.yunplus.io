@@ -1500,14 +1500,21 @@ fpm-plugin-logger@^1.0.0:
     lodash "^4.17.4"
     log4js "^2.6.0"
 
-fpm-plugin-mysql@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-mysql/-/fpm-plugin-mysql-1.0.8.tgz#79ecf713eaf2ba378e39f3fbe97b0f9f987fa6f5"
+fpm-plugin-mysql@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-mysql/-/fpm-plugin-mysql-1.1.0.tgz#f1e9855f39c8c22f6fed34a7d834b075a8e796f7"
   dependencies:
     async "^2.6.0"
     bluebird "^3.4.7"
     lodash "^4.17.4"
     yf-fpm-dbm "^2.0.7"
+
+fpm-plugin-sms@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-sms/-/fpm-plugin-sms-1.0.0.tgz#b616be20a43e1dd59df9f7147f0f87c2d4d1f970"
+  dependencies:
+    axios "^0.18.0"
+    lodash "^4.17.4"
 
 fragment-cache@^0.2.1:
   version "0.2.1"
@@ -4059,9 +4066,9 @@ yf-fpm-dbm@^2.0.7:
     lodash "^4.15.0"
     mysql "^2.13.0"
 
-yf-fpm-server@^2.4.9:
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.9.tgz#a5f9e289251babed4147a9d542d99a0f2f148810"
+yf-fpm-server@^2.4.11:
+  version "2.4.11"
+  resolved "https://registry.yarnpkg.com/yf-fpm-server/-/yf-fpm-server-2.4.11.tgz#bb66381198f8dcf41d7b8bd4e606bf417cddfe2d"
   dependencies:
     koa "^2.5.1"
     koa-bodyparser "^4.2.1"

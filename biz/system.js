@@ -1,17 +1,7 @@
 import _ from 'lodash'
 import os from 'os'
-import fs from 'fs'
-import bluebird from 'bluebird'
 import path from 'path'
-import axios from 'axios'
-const readFileAsync = bluebird.promisify(fs.readFile)
 
-/**
- * StiStrap module
- * @module StiStrap
- * @namespace StiStrap
- * @desc 提供Bootstrap的Vue实现
- */
 export default (fpm) => {
 	return {
 		doCommand: async(args) => {

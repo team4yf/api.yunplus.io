@@ -1,5 +1,5 @@
 {
-  "name": "yf-fpm-server-starter-with-mysql",
+  "name": "yf-fpm-server-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,9 +18,10 @@
     "faker": "^4.1.0",
     "fpm-plugin-admin": "^1.0.6",
     "fpm-plugin-logger": "^1.0.0",
-    "fpm-plugin-mysql": "^1.0.8",
+    "fpm-plugin-mysql": "^1.1.0",
+    "fpm-plugin-sms": "^1.0.0",
     "lodash": "^4.16.1",
-    "yf-fpm-server": "^2.4.9"
+    "yf-fpm-server": "^2.4.11"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
