@@ -1507,9 +1507,9 @@ fpm-plugin-admin@^1.0.6:
     nunjucks "^3.1.2"
     yf-fpm-client-js "^1.0.2"
 
-fpm-plugin-jpush@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-jpush/-/fpm-plugin-jpush-1.0.0.tgz#aa2485c1b446e77d509a919b41eb981e4ec8a7ef"
+fpm-plugin-jpush@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-jpush/-/fpm-plugin-jpush-1.0.1.tgz#372aa897ba4e956f7241b4a7281eb599cef7c86f"
   dependencies:
     jpush-async "^4.0.0-rc.1"
     lodash "^4.17.4"
@@ -1521,9 +1521,9 @@ fpm-plugin-logger@^1.0.0:
     lodash "^4.17.4"
     log4js "^2.6.0"
 
-fpm-plugin-mysql@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-mysql/-/fpm-plugin-mysql-1.1.0.tgz#f1e9855f39c8c22f6fed34a7d834b075a8e796f7"
+fpm-plugin-mysql@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-mysql/-/fpm-plugin-mysql-1.1.1.tgz#47ba0ce081fef52d31ade68a1733f0d0f10054a6"
   dependencies:
     async "^2.6.0"
     bluebird "^3.4.7"
