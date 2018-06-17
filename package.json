@@ -17,7 +17,7 @@
     "bluebird": "^3.4.6",
     "faker": "^4.1.0",
     "fpm-plugin-admin": "^1.0.6",
-    "fpm-plugin-jpush": "^1.0.2",
+    "fpm-plugin-jpush": "^1.0.4",
     "fpm-plugin-logger": "^1.0.0",
     "fpm-plugin-mysql": "^1.1.1",
     "fpm-plugin-sms": "^1.0.0",
