@@ -1507,9 +1507,9 @@ fpm-plugin-admin@^1.0.6:
     nunjucks "^3.1.2"
     yf-fpm-client-js "^1.0.2"
 
-fpm-plugin-jpush@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/fpm-plugin-jpush/-/fpm-plugin-jpush-1.0.1.tgz#372aa897ba4e956f7241b4a7281eb599cef7c86f"
+fpm-plugin-jpush@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fpm-plugin-jpush/-/fpm-plugin-jpush-1.0.2.tgz#5bcc28e5fc987a2301c6c568a191007c22eb7d1c"
   dependencies:
     jpush-async "^4.0.0-rc.1"
     lodash "^4.17.4"
