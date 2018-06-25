@@ -15,4 +15,16 @@ describe('Function', function(){
       });
   
   })
+
+  it('System.show', function(done){
+    var func = new fpmc.Func('system.show');
+    func.invoke({})
+      .then(function(d){
+        console.log(d)
+        done();
+      }).catch(function(err){
+        done(err);
+      });
+  
+  })
 })
