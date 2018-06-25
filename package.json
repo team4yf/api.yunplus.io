@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel -d lib/ biz/",
-    "test": "node test/*.test.js",
+    "test": "./node_modules/.bin/mocha test/*.test.js",
     "start": "node app.js",
     "prestart": "npm run compile",
     "dev": "./node_modules/.bin/nodemon dev/dev.babel.js"
@@ -18,9 +18,9 @@
     "faker": "^4.1.0",
     "fpm-plugin-admin": "^1.0.6",
     "fpm-plugin-logger": "^1.0.0",
-    "fpm-plugin-mysql": "^1.0.8",
+    "fpm-plugin-mysql": "^1.1.1",
     "lodash": "^4.16.1",
-    "yf-fpm-server": "^2.4.9"
+    "yf-fpm-server": "^2.4.12"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",

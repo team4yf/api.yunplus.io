@@ -6,12 +6,6 @@ import path from 'path'
 import axios from 'axios'
 const readFileAsync = bluebird.promisify(fs.readFile)
 
-/**
- * StiStrap module
- * @module StiStrap
- * @namespace StiStrap
- * @desc 提供Bootstrap的Vue实现
- */
 export default (fpm) => {
 	return {
 		doCommand: async(args) => {
@@ -32,6 +26,7 @@ export default (fpm) => {
 					totalmem: Math.ceil(os.totalmem() / 1024 / 1024),
 					uptime: os.uptime(),
 					server: info,
+					counter: fpm._counter,
 					startTime: fpm._start_time,
 				}
 			}catch(e){
