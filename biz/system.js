@@ -1,10 +1,6 @@
 import _ from 'lodash'
 import os from 'os'
-import fs from 'fs'
-import bluebird from 'bluebird'
 import path from 'path'
-import axios from 'axios'
-const readFileAsync = bluebird.promisify(fs.readFile)
 
 export default (fpm) => {
 	return {
@@ -30,6 +26,7 @@ export default (fpm) => {
 					startTime: fpm._start_time,
 				}
 			}catch(e){
+				fpm.logger.error(e)
 			}
 			return new Promise( (resolve, reject) => {
 				if(_.isEmpty(data)){
