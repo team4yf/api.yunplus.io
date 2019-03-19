@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.test.js",
-    "start": "node app.js",
+    "start": "node source/app.js",
+    "pm2": "pm2 start source/app.js --name api.yunplus.io -i 1",
     "dev": "./node_modules/.bin/nodemon source/app.js"
   },
   "author": "",

@@ -23,6 +23,15 @@
       "secretkey": "123123"
     }
   },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "poolSize": 5,
+    "auth": {
+      "user": "admin",
+      "password": "admin"
+    }
+  },
   "mysql": {
     "host":"localhost",
     "database":"fpm",

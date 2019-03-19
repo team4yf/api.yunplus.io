@@ -2,7 +2,7 @@ const fpmc = require("fpmc-jssdk");
 const { DBQuery, Func, init } = fpmc;
 const assert = require('assert');
 
-init({ appkey:'123123', masterKey:'123123', endpoint: 'http://localhost:9999/api', version: '0.0.1' });
+init({ appkey:'123123', masterKey:'123123', endpoint: 'http://api.yunplus.io/api', version: '0.0.1' });
 
 describe('Function', function(){
   it('test', function(done){

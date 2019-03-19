@@ -10,7 +10,7 @@ module.exports = (fpm) =>{
 		},
 		show: async (args) => {
 			try{
-				const info = require(path.join(__dirname, '../package.json'))
+				const info = require(path.join(__dirname, '../../package.json'))
 				const data = {
 					arch: os.arch(),
 					cpus: os.cpus(),
