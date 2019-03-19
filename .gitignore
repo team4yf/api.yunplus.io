@@ -24,3 +24,5 @@ key.js
 config.json
 pages/*
 views/*
+*-lock.json
+db.lock

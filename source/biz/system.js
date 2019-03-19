@@ -1,17 +1,17 @@
-import _ from 'lodash'
-import os from 'os'
-import path from 'path'
+const _ = require('lodash')
+const os = require('os')
+const path = require('path')
+const debug = require('debug')('system');
 
-export default (fpm) => {
+module.exports = (fpm) =>{
 	return {
 		doCommand: async(args) => {
 			return fpm.doCommand(args.command)
 		},
 		show: async (args) => {
-			let data = {};
 			try{
-				let info = require(path.join(__dirname, '../package.json'))
-				data = {
+				const info = require(path.join(__dirname, '../package.json'))
+				const data = {
 					arch: os.arch(),
 					cpus: os.cpus(),
 					hostname: os.hostname(),
@@ -24,18 +24,13 @@ export default (fpm) => {
 					server: info,
 					counter: fpm._counter,
 					startTime: fpm._start_time,
-				}
+        }
+        
+        return { data };
 			}catch(e){
-				fpm.logger.error(e)
+        debug('%o', e);
+        return Promise.reject({ errno: -9998, error: e })
 			}
-			return new Promise( (resolve, reject) => {
-				if(_.isEmpty(data)){
-					reject({errno: -9998})
-				}else{
-
-					resolve({data: data})
-				}
-			})
 		}
 	}
 

@@ -4,38 +4,29 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "babel -d lib/ biz/",
     "test": "./node_modules/.bin/mocha test/*.test.js",
     "start": "node app.js",
-    "prestart": "npm run compile",
-    "dev": "./node_modules/.bin/nodemon dev/dev.babel.js"
+    "dev": "./node_modules/.bin/nodemon source/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
     "bluebird": "^3.4.6",
+    "debug": "^4.1.1",
     "faker": "^4.1.0",
     "fpm-plugin-admin": "^1.0.6",
     "fpm-plugin-jpush": "^1.0.4",
-    "fpm-plugin-logger": "^1.0.0",
-    "fpm-plugin-mysql": "^1.1.1",
+    "fpm-plugin-mongo": "^1.1.0",
+    "fpm-plugin-mysql": "^1.2.0",
     "fpm-plugin-sms": "^1.0.0",
     "lodash": "^4.16.1",
-    "yf-fpm-server": "^2.4.12"
-    
+    "yf-fpm-server": "^2.5.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-core": "^6.14.0",
-    "babel-plugin-transform-runtime": "^6.0.0",
-    "babel-polyfill": "^6.13.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.14.0",
     "babel-runtime": "^6.0.0",
-    "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
-    "yf-fpm-client-js": "^1.0.2"
+    "fpmc-jssdk": "^1.0.4"
   }
 }

@@ -1,8 +1,8 @@
-import _ from 'lodash'
+const _ = require('lodash');
 
-export default function(fpm){
+module.exports =  (fpm) =>{
 	return {
-		checkVersion: async function(args){
+		checkVersion: async (args) =>{
 	    let arg = {
 	     table: "cm_version",
 	     condition: "delflag = 0 and app = '" + args.app + "'",

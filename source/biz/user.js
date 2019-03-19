@@ -1,6 +1,6 @@
-import _ from 'lodash'
+const _ = require('lodash')
 
-export default (fpm) => {
+module.exports =  (fpm) =>{
 	return {
 		login: function(args){
 			return new Promise( (resolve, reject) => {

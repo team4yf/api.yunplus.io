@@ -1,10 +1,12 @@
-var should = require("chai").should;
-var fpmc = require("yf-fpm-client-js").default;
-fpmc.init({ mode: 'DEV', appkey:'123123', masterKey:'123123' });
+const fpmc = require("fpmc-jssdk");
+const { DBQuery, Func, init } = fpmc;
+const assert = require('assert');
+
+init({ appkey:'123123', masterKey:'123123', endpoint: 'http://localhost:9999/api', version: '0.0.1' });
 
 describe('Function', function(){
   it('test', function(done){
-    var query = new fpmc.Query('api_app');
+    var query = new DBQuery('api_app');
     query.condition({appenvironment: 'product', apptype: 'web', status: '1'})
     .findAndCount()
       .then(function(d){
@@ -17,7 +19,7 @@ describe('Function', function(){
   })
 
   it('System.show', function(done){
-    var func = new fpmc.Func('system.show');
+    var func = new Func('system.show');
     func.invoke({})
       .then(function(d){
         console.log(d)

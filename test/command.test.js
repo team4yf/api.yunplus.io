@@ -1,10 +1,12 @@
-var should = require("chai").should;
-var fpmc = require("yf-fpm-client-js").default;
-fpmc.init({ mode: 'DEV', appkey:'123123', masterKey:'123123' });
+const fpmc = require("fpmc-jssdk");
+const { Func, init } = fpmc;
+const assert = require('assert');
+
+init({ appkey:'123123', masterKey:'123123', endpoint: 'http://localhost:9999/api', version: '0.0.1' });
 
 describe('Function', function(){
   it('test', function(done){
-    var func = new fpmc.Func('sms.send');
+    var func = new Func('sms.send');
     func.invoke({
       tpl_id: 39012, // The template Id In Juhe.CN  you can set it At  [https://www.juhe.cn/sms](https://www.juhe.cn/sms)
       mobiles: '13770683580',   // The Phone Numbers
@@ -19,7 +21,7 @@ describe('Function', function(){
   
   })
   it('test', function(done){
-    var func = new fpmc.Func('faker.getOne');
+    var func = new Func('faker.getOne');
     func.invoke({fields: {
       category: 'lorem.word',
       title: 'lorem.slug',
@@ -39,7 +41,7 @@ describe('Function', function(){
   })
 
   it('test', function(done){
-    var func = new fpmc.Func('faker.getList');
+    var func = new Func('faker.getList');
     func.invoke({fields: {
       address: 'address.citySuffix',
       commerce: 'commerce.product',
